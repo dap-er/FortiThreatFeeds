@@ -22,7 +22,8 @@ We have the action script set to run at 8 am CST every day via an action .yml fi
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 General setup- if copied:
-**Note**- You can fork off the original if you don't want to maintain your repo. If you want to maintain your see below.
+
+**Note**- You can fork off the original if you don't want to maintain your repo. If you want to maintain your own see below.
 - Download all files from this repo.
 - Create your repo.
 - Create your personal access token (follow best practice to expire this after X amount of days.) Copy this code, see details here: https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
