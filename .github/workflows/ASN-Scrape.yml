@@ -28,8 +28,8 @@ jobs:
 
       - name: Overwrite SSLVPN-ASN-Blocks.txt
         run: |
-          git config --local user.email "rbeaman@durand.k12.wi.us"
-          git config --local user.name "DASD-Panthers"
+          git config --local user.email "mewer@chippewacountywi.gov"
+          git config --local user.name "Dap-er"
           git add SSLVPN-ASN-Blocks.txt  # Force-add the file
           git commit -m "Update SSLVPN-ASN-Blocks.txt" --allow-empty  # Commit changes, even if no changes were made
           git push --force  # Force push changes to the remote repository
