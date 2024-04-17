@@ -1,0 +1,40 @@
+name: Scrape ASN Websites from Master List
+
+on:
+  schedule:
+    - cron: "0 11 * * *"  # Run the job every day at 12pm UTC (equivalent to 7am CST)
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run script
+        run: python ASN-Script.py
+
+      - name: Overwrite SSLVPN-ASN-Blocks.txt
+        run: |
+          git config --local user.email "rbeaman@durand.k12.wi.us"
+          git config --local user.name "DASD-Panthers"
+          git add SSLVPN-ASN-Blocks.txt  # Force-add the file
+          git commit -m "Update SSLVPN-ASN-Blocks.txt" --allow-empty  # Commit changes, even if no changes were made
+          git push --force  # Force push changes to the remote repository
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.Secret_Action_Token }}  # Use the secret token
