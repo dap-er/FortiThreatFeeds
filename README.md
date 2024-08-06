@@ -41,6 +41,7 @@ Update Log/Token Troubleshooting:
 
 1.0 - Change workflow permissions - otherwise it will error out on the actions process.  
 1.1 - https://stackoverflow.com/questions/72851548/permission-denied-to-github-actionsbot
+
 1.2 - Personal tokens must be generated and rotated out as a general rule of thumb. Use this token as a repo secret under settings.
 1.3 - Added additional steps to the general setup instructions, and corrected some grammar issues.
 
