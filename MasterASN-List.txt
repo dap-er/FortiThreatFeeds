@@ -84,3 +84,26 @@ https://asn.ipinfo.app/api/text/list/AS46337
 
 #Name: OVH Hosting
 https://asn.ipinfo.app/api/text/list/AS16276
+
+#Name: CDNEXT - Datacamp Limited (09/23/24)
+https://asn.ipinfo.app/api/text/list/AS212238
+
+#Name: TZULO (09/23/24)
+https://asn.ipinfo.app/api/text/list/AS11878
+
+#Name: UK2NET-AS - UK-2 Limited (09/23/24)
+https://asn.ipinfo.app/api/text/list/AS13213
+
+#Name: M247 - M247 Europe SRL (09/23/24)
+https://asn.ipinfo.app/api/text/list/AS9009
+
+#Name: CDN77 - Datacamp Limited (09/23/24)
+https://asn.ipinfo.app/api/text/list/AS60068
+
+#Name: ASN-QUADRANET-GLOBAL (09/23/24)
+https://asn.ipinfo.app/api/text/list/AS8100
+
+
+
+
+
